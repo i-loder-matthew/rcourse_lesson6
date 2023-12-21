@@ -1,5 +1,5 @@
 ## READ IN DATA ####
-source("scripts/rcourse_lesson6_cleaning.R")
+source("scripts/cleaning.R")
 
 ## LOAD PACKAGES ####
 library(ggplot2)
@@ -76,3 +76,6 @@ rt_log10_boxplot.plot = ggplot(data_rt_figs, aes(x = half, y = rt_log10, fill = 
 pdf("figures/rt_log10.pdf")
 rt_log10_boxplot.plot
 dev.off()
+
+
+

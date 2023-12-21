@@ -52,8 +52,11 @@ data_accuracy_clean = data_clean %>%
   filter(rt > rt_low)
 
 # Remove data points with incorrect response for RT data
+
+
 data_rt_clean = data_accuracy_clean %>%
-  filter(accuracy == "1")
+  filter(accuracy == "1") %>%
+  mutate(rt_log10 = log10(rt))
 
 
 
